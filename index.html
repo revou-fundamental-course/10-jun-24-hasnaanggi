@@ -1,2 +1,37 @@
-/*untuk tes git*/
-/*ada perubahan*/
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Konversi Suhu</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="header">
+        REVOU - HASNA ANGGIN TRI MUSLIMIN
+    </div>
+    <div class="container">
+        <h1>Kalkulator Konversi Suhu</h1>
+        <form id="temperatureForm">
+            <label for="temperatureInput">Masukkan Suhu (°C/F):</label>
+            <input type="text" id="temperatureInput" name="temperatureInput" required>
+            <div class="buttons">
+                <button type="submit">Konversi</button>
+                <button type="button" id="resetButton">Reset</button>
+                <button type="button" id="reverseButton">Reverse</button>
+            </div>
+        </form>
+        <div id="result">
+            <textarea id="outputFahrenheit" readonly placeholder="Fahrenheit (°F)"></textarea>
+            <textarea id="calculation" readonly placeholder="Cara Kalkulasi"></textarea>
+        </div>
+        <div id="conversionInfo">
+            <h2>Rumus koversi Dari Celsius (°C) ke Fahrenheit (°F) / Reverse : </h2>
+            <p><i>S</i><sub>F</sub> = (<i>S</i><sub>C</sub> × 9/5) + 32</p>
+            <p>Dan</p>
+            <p><i>S</i><sub>C</sub> = (<i>S</i><sub>F</sub> - 32) × 5/9</p>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
